@@ -14,7 +14,7 @@ const Schedule = ({ schedule, setTreatment }) => {
                         }</p>
                     <p>{slots.length} {slots.length > 0 ? 'spaces' : 'space'} available.</p>
                     <div className="card-actions justify-center">
-                        <label onClick={() => setTreatment(schedule)} for="booking-modal" className="btn bg-gradient-to-r from-secondary to-primary btn-sm text-white border-0 modal-button">Book Appointment</label>
+                        <label onClick={() => setTreatment(schedule)} htmlFor="booking-modal" className="btn bg-gradient-to-r from-secondary to-primary btn-sm text-white border-0 modal-button">Book Appointment</label>
                     </div>
                 </div>
             </div>
