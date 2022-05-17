@@ -64,13 +64,13 @@ const BookingModal = ({ treatment, setTreatment, date, refetch}) => {
             <input type="checkbox" id="booking-modal" className="modal-toggle" />
             <div className="modal modal-bottom sm:modal-middle">
                 <div className="modal-box">
-                    <label htmlhtmlFor="booking-modal" className="btn bg-gradient-to-r from-secondary to-primary border-0 btn-sm btn-circle absolute right-2 top-2">✕</label>
+                    <label htmlFor="booking-modal" className="btn bg-gradient-to-r from-secondary to-primary border-0 btn-sm btn-circle absolute right-2 top-2">✕</label>
                     <h3 className="font-bold text-lg text-secondary">Booking for: {name}</h3>
                     <form onSubmit={handleBook}>
                         <input className='block w-full border outline-0 rounded p-3 my-3 bg-slate-200' type="text" value={user?.displayName} readOnly id="" />
                         <input className='block w-full border outline-0 rounded p-3 my-3 bg-slate-200' type="email" value={user?.email} readOnly id="" />
                         <input className='block w-full border outline-0 rounded p-3 my-3 bg-slate-200' value={format(date, 'PP')} type="text" name="date" id="" readOnly />
-                        <select className="select block w-full rounded p-3 my-3 bg-slate-200" name='slot'>
+                        <select className="select block w-full rounded p-3 my-3 bg-slate-200 focus:outline-0" name='slot'>
                             {
                                 slots.map((slot, index) => <option key={index} value={slot}>{slot}</option>)
                             }

@@ -15,6 +15,8 @@ import Myappointment from './Components/Pages/Dashboard/Myappointment';
 import Reviews from './Components/Pages/Dashboard/Reviews';
 import Myhistory from './Components/Pages/Dashboard/Myhistory';
 import Users from './Components/Pages/Dashboard/Users';
+import UpdateDoctor from './Components/Pages/Dashboard/UpdateDoctor';
+import ManageDoctors from './Components/Pages/Dashboard/ManageDoctors';
 
 
 function App() {
@@ -38,6 +40,8 @@ function App() {
           <Route path='reviews' element={<Reviews></Reviews>}></Route> 
           <Route path='history' element={<Myhistory></Myhistory>}></Route> 
           <Route path='users' element={<Users></Users>}></Route> 
+          <Route path='updatedoctors' element={<UpdateDoctor></UpdateDoctor>}></Route> 
+          <Route path='managedoctors' element={<ManageDoctors></ManageDoctors>}></Route> 
         </Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
