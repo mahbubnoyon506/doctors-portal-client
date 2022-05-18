@@ -7,7 +7,7 @@ const axios = require('axios').default;
 
 const BookingModal = ({ treatment, setTreatment, date, refetch}) => {
     const [user] = useAuthState(auth);
-    const { _id, name, slots } = treatment;
+    const { _id, name, slots, price } = treatment;
     const foramatedDate = format(date, 'PP')
     const handleBook = event => {
         event.preventDefault();
@@ -17,6 +17,7 @@ const BookingModal = ({ treatment, setTreatment, date, refetch}) => {
             patientName: user.displayName,
             patient: user.email,
             phone: event.target.phone.value,
+            price,
             date: foramatedDate,
             slot: event.target.slot.value
         }

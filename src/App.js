@@ -17,6 +17,7 @@ import Myhistory from './Components/Pages/Dashboard/Myhistory';
 import Users from './Components/Pages/Dashboard/Users';
 import UpdateDoctor from './Components/Pages/Dashboard/UpdateDoctor';
 import ManageDoctors from './Components/Pages/Dashboard/ManageDoctors';
+import Payment from './Components/Pages/Dashboard/Payment';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path='reviews' element={<Reviews></Reviews>}></Route> 
           <Route path='history' element={<Myhistory></Myhistory>}></Route> 
           <Route path='users' element={<Users></Users>}></Route> 
+          <Route path='payment/:id' element={<Payment></Payment>}></Route> 
           <Route path='updatedoctors' element={<UpdateDoctor></UpdateDoctor>}></Route> 
           <Route path='managedoctors' element={<ManageDoctors></ManageDoctors>}></Route> 
         </Route>
